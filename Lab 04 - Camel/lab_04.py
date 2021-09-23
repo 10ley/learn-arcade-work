@@ -103,7 +103,7 @@ Q. Quit.""")
             print()
             print("You and your horse are tired.")
 
-        if dragon <= ((miles_traveled - dragon) + 15):
+        if (miles_traveled - dragon) <= 15:
             print()
             print("The dragon is close.")
 
