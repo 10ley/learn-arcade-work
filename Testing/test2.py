@@ -1,15 +1,16 @@
-"""
-Test functions
-"""
+# Put your code below:
+def print_triangle(rows):
+    for row in range(rows):
+        for column in range (row - 1):
+            print(row, end=" ")
+            for row_count in range (column):
+                print(".", end=" ")
+        print()
 
 
-def average(x, y, z):
-    result = (x + y + z) / 3
-    return result
-
-
-n1 = 10
-n2 = 20
-n3 = 30
-my_result = average(n1, n2, n3)
-print(my_result)
+# Here are some example calls to test your code. Don't change the code below:
+print_triangle(5)
+print()
+print_triangle(3)
+print()
+print_triangle(9)

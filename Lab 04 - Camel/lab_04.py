@@ -87,7 +87,7 @@ Q. Quit.""")
         if horse_hunger >= 7:
             print()
             print("Your horse died of hunger!")
-            done = True
+            break
 
         elif horse_hunger >= 5:
             print()
@@ -96,7 +96,7 @@ Q. Quit.""")
         if tiredness >= 8:
             print()
             print("You died of exhaustion")
-            done = True
+            break
 
         # Tiredness
         elif tiredness >= 5:
