@@ -1,10 +1,10 @@
 # Put your code below:
 def print_triangle(rows):
     for row in range(rows):
-        for column in range (row - 1):
+        for column in range(rows - row - 1):
+            print(".", end=" ")
+        for column in range (row + 1):
             print(row, end=" ")
-            for row_count in range (column):
-                print(".", end=" ")
         print()
 
 
