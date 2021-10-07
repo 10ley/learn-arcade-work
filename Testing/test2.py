@@ -4,7 +4,9 @@ def print_triangle(rows):
         for column in range(rows - row - 1):
             print(".", end=" ")
         for column in range (row + 1):
-            print(row, end=" ")
+            print(column, end=" ")
+        for column in range (row - 1, -1, -1):
+            print(column, end=" ")
         print()
 
 
