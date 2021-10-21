@@ -33,7 +33,7 @@ def main():
                 " To the west is a cell?", 1, 5, 7, 3)
     room_list.append(room)
     room = Room("a jail like room, a monster gleams from within the cage."
-                " West of you is the hall", None, None, None, 4)
+                " West of you is the hall.", None, None, None, 4)
     room_list.append(room)
     room = Room("office? There is a desk with claw marks."
                 "West of you is the hall.", None, 7, None, None)
@@ -43,7 +43,7 @@ def main():
                 " East of you is a staircase", 4, 8, None, 6)
     room_list.append(room)
     room = Room("dark, and steep staircase."
-                " to the south ???...", None, None, 9, 7)
+                " To the south ???...", None, None, 9, 7)
     room_list.append(room)
     room = Room("a room, full of mangled bodies and dismembered limbs."
                 " The stairs are to the north.", 8, None, None, None)
@@ -99,7 +99,7 @@ def main():
 
         else:
             print()
-            print("I'm sorry, I do not understand")
+            print("I'm sorry, I do not understand.")
 
 
 main()

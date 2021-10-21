@@ -11,3 +11,11 @@ for item in my_list:
             biggest_number = item
 
 print(biggest_number)
+
+my_list = [4, 5, 56, 2, 0]
+
+biggest_number = my_list[0]
+for item in my_list:
+    if item in my_list:
+        if item % :
+            biggest_number = item
