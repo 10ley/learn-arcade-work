@@ -115,18 +115,10 @@ class MyGame(arcade.Window):
         output = f"Score : {self.score}"
         arcade.draw_text(output, 10, 20, arcade.color.WHITE, 14)
 
-        if self.score <= -1:
-            output = f"Game Over"
-            arcade.draw_text(output, 400, 300, arcade.color.WHITE, 40)
-
     def on_mouse_motion(self, x, y, dx, dy):
 
-        if self.score > -1:
-            self.player_sprite.center_x = x
-            self.player_sprite.center_y = y
-        else:
-            self.player_sprite.center_x = -100
-            self.player_sprite.center_y = -100
+        self.player_sprite.center_x = x
+        self.player_sprite.center_y = y
 
     def update(self, delta_time):
         self.fish_list.update()
@@ -137,6 +129,8 @@ class MyGame(arcade.Window):
         for fish in hit_list:
             fish.remove_from_sprite_lists()
             self.score += 1
+            if len(hit_list) >= 0:
+                arcade.draw_text("Game Over", 350, 250, arcade.color.WHITE, 50)
 
         bad_hit_list = arcade.check_for_collision_with_list(self.player_sprite,
                                                             self.water_list)
@@ -144,6 +138,7 @@ class MyGame(arcade.Window):
         for water in bad_hit_list:
             water.remove_from_sprite_lists()
             self.score -= 1
+
 
 
 def main():
