@@ -1,0 +1,41 @@
+Quantitative Reasoning Reflection
+Tenley Schroeder
+12/1/21
+
+Question 1
+
+    There are different methods and techniques to programming. I use if statements
+all the time. I use if statements for conditions and Boolean variables. An example
+of this is true and false. By knowing if someone this true or false you can trigger
+different code. Loops are also very useful. I use loops, so I don't need to repeat
+my code. An example of this is for one of my games. I created multiple sprites though
+a loop.
+    Games are built off of classes. They allow you to give attributes and mechanics
+to an object. As well as create code all within one class. You can create
+multiple objects within a class. It allows you to put multiple functions together.
+Functions allow you to make a set of code you can call upon multiple times. It makes
+the code much easier to read. It allows me to chunk my code out into more readable
+lines of codes.
+    Lists, are amazing. I use them all the time. Lists allow you to create multiples.
+Lists allow you to keep a running total of different numbers. They are very helpful
+in games because of the ability of lists. The Camel lab, is a great example of
+how useful lists are.
+    Quantitative methods make up almost all the logic of programming.
+
+Question 2
+
+comments
+spacing
+variable names
+function names
+chunking
+
+
+Question 3
+
+run it
+look at the errors
+
+Question 4
+
+
