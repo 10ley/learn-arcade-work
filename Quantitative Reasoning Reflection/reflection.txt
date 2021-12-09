@@ -24,18 +24,34 @@ how useful lists are.
 
 Question 2
 
-comments
-spacing
-variable names
-function names
-chunking
-
+    One of the biggest ways that I communicate with other coders, who are reading my code
+is by using comments. By commenting you can quickly explain what the chunk of code
+does. Another way to help others read my code better is by naming the
+variables, functions and classes, as what they are. This is a quick way
+to help others understand different sections of code. Like not using the variable
+x, but instead temp. It makes the code much easier to read and follow.
+Chunking is also extremely helpful, by chunking you are able to follow the code
+section for section.
 
 Question 3
 
-run it
-look at the errors
+    You test and evaluate the accuracy of your code in many ways. One way is just to
+just run the code and see if it works. Another way, is to look at the crash messages,
+"Why did the game crash? What line is the error in?"
+Another way is by looking at the little errors in the corner and following them to the
+problem. Such as an error of a certain variable being spelt wrong. Something that
+small can mess up all of your code. I debug my codes by looking at where it went wrong
+and working from there.
 
 Question 4
+
+    There are many limitations to using numerical methods to make decisions. Numbers
+can't fully think and contempt decisions. They can make their best guess, but it
+will not be fair, as well as everything would be the same. We can't just evaluate
+students on just test scores, because we need to look at how they have progressed
+throughout the semester. We cannot evaluate teachers on how their students do, because
+each student is different, we can look at the progress not just the numbers.
+By evaluating athletes on their stats alone we can not determine if they would
+be a good fit for the team.
 
 

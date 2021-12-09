@@ -36,6 +36,10 @@ ASTROID_COUNT = 10
 
 
 class MenuView(arcade.View):
+    """
+    First Menu
+    """
+
     def on_show(self):
         arcade.set_background_color(arcade.color.OUTER_SPACE)
 
@@ -52,6 +56,9 @@ class MenuView(arcade.View):
 
 
 class InstructionView(arcade.View):
+    """
+    Instructions
+    """
 
     def on_show(self):
         arcade.set_background_color(arcade.color.SPACE_CADET)
@@ -81,6 +88,9 @@ class InstructionView(arcade.View):
 
 
 class Lifeup(arcade.Sprite):
+    """
+    Lifeup powerup sprite set up
+    """
     def __init__(self, filename, scaling):
 
         super().__init__(filename, HEART_SCALING)
@@ -108,6 +118,9 @@ class Lifeup(arcade.Sprite):
 
 
 class Astroid(arcade.Sprite):
+    """
+    Astroid set up
+    """
 
     def reset_pos(self):
 
@@ -124,6 +137,9 @@ class Astroid(arcade.Sprite):
 
 
 class Enemy(arcade.Sprite):
+    """
+    Enemy logic
+    """
 
     def __init__(self, image, scale, position_list):
         super().__init__(image, scale)
@@ -164,6 +180,9 @@ class Enemy(arcade.Sprite):
 
 
 class GameView(arcade.View):
+    """
+    Main Game
+    """
 
     def __init__(self):
         super().__init__()
@@ -236,6 +255,7 @@ class GameView(arcade.View):
             ycoord += 500
             self.enemy_list.append(enemy)
 
+        # Creating astroids
         for i in range(ASTROID_COUNT):
             astroid = Astroid("e1b72fdc59bc3b1.png", ASTROID_SCALING)
             # Art from nivannono
@@ -245,6 +265,7 @@ class GameView(arcade.View):
 
             self.astroid_list.append(astroid)
 
+        # Creating lifeup sprites
         for i in range(3):
             life = Lifeup("heart pixel art 254x254.png", HEART_SCALING)
             # Art from Dansevenstar
@@ -259,6 +280,7 @@ class GameView(arcade.View):
         arcade.set_background_color(arcade.color.OUTER_SPACE)
 
     def on_draw(self):
+        # Start drawing
         arcade.start_render()
         self.player_list.draw()
         self.enemy_list.draw()
@@ -273,10 +295,12 @@ class GameView(arcade.View):
         arcade.draw_text(output, 10, 40, arcade.color.WHITE, 14)
 
     def on_key_press(self, key, modifiers):
+        # Player movement
         if key == arcade.key.LEFT:
             self.player_sprite.change_x = -PLAYER_MOVEMENT_SPEED
         elif key == arcade.key.RIGHT:
             self.player_sprite.change_x = PLAYER_MOVEMENT_SPEED
+        # Bullets
         elif key == arcade.key.SPACE:
             bullet = arcade.Sprite("bullet.png", BULLET_SCALING)
             # Sprite from PIXELARTMAKER
@@ -422,7 +446,7 @@ class GameOverView(arcade.View):
         Draw "Game over" across the screen.
         """
         arcade.draw_text("Game Over", 230, 400, arcade.color.WHITE, 54)
-        arcade.draw_text("Click to restart", 350, 325, arcade.color.WHITE, 24)
+        arcade.draw_text("Click to restart", 300, 325, arcade.color.WHITE, 24)
 
         time_taken_formatted = f"{round(self.time_taken, 2)} seconds"
         arcade.draw_text(f"Time taken: {time_taken_formatted}",
